@@ -195,10 +195,17 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>F:\Jeux\steamapps\common\Valheim\valheim_Data\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="websocket-sharp, Version=1.0.2.59611, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebSocketSharp.1.0.3-rc11\lib\websocket-sharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ValheimWebSocketServer.cs" />
     <Compile Include="ValheimWebSocketPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
