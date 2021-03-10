@@ -30,4 +30,4 @@ You can generate your credentials from https://twitchtokengenerator.com/
 - Click on "Generate token"
 
 # Development
-- [Offical client](https://github.com/skarab42/valheim-websocket-client)
+- [Official client](https://github.com/skarab42/valheim-websocket-client)
