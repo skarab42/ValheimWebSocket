@@ -20,7 +20,7 @@ WIP Projet développé en live sur la chaîne [twitch.tv/skarab42](https://www.t
 - Run the game
 - Enjoy!
 
-# Twitch credentials
+## Twitch credentials
 You can generate your credentials from https://twitchtokengenerator.com/
 
 - From the popup window chose the "Custom Scope Token"
@@ -29,5 +29,5 @@ You can generate your credentials from https://twitchtokengenerator.com/
   - channel:manage:redemptions
 - Click on "Generate token"
 
-# Client (for dev)
+# Development
 - [Offical client](https://github.com/skarab42/valheim-websocket-client)
