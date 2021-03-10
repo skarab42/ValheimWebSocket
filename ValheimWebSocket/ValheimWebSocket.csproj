@@ -211,11 +211,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\MessageDispatcher.cs" />
     <Compile Include="Classes\PlayerDispatcher.cs" />
-    <Compile Include="GameClasses\Raven.cs" />
     <Compile Include="GameClasses\Player.cs" />
     <Compile Include="Classes\ClientLauncher.cs" />
-    <Compile Include="Classes\HuginDispatcher.cs" />
+    <Compile Include="Classes\RavenDispatcher.cs" />
     <Compile Include="Classes\ValheimWebSocketServer.cs" />
     <Compile Include="ValheimWebSocketPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

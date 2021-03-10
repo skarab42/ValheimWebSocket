@@ -17,10 +17,10 @@ namespace ValheimWebSocket.Classes
                 {
                     myProcess.StartInfo.FileName = path;
                     myProcess.StartInfo.Arguments = args;
-                    myProcess.StartInfo.CreateNoWindow = true;
-                    myProcess.StartInfo.UseShellExecute = false;
-                    myProcess.StartInfo.RedirectStandardError = true;
-                    myProcess.StartInfo.RedirectStandardOutput = true;
+                    myProcess.StartInfo.CreateNoWindow = false;
+                    myProcess.StartInfo.UseShellExecute = true;
+                    myProcess.StartInfo.RedirectStandardError = false;
+                    myProcess.StartInfo.RedirectStandardOutput = false;
 
                     logger.LogInfo($"[VWS] Starting Client {path}");
 

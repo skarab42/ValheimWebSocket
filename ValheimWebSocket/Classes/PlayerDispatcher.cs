@@ -11,14 +11,17 @@ namespace ValheimWebSocket.Classes
         {
             switch (args[0])
             {
-                case "message":
-                    Message(args[1], args[2]);
+                case "center":
+                    Message(MessageHud.MessageType.Center, args[1], args[2]);
+                    break;
+
+                case "top-left":
+                    Message(MessageHud.MessageType.TopLeft, args[1], args[2]);
                     break;
             }
         }
 
-        // ws:/player/message/<user>/<text>
-        public static void Message(string user, string text)
+        public static void Message(MessageHud.MessageType type, string user, string text)
         {
             try
             {
@@ -26,7 +29,7 @@ namespace ValheimWebSocket.Classes
                 
                 if (Player.m_localPlayer != null)
                 {
-                    Player.m_localPlayer.Message(MessageHud.MessageType.Center, user + ": " + text);
+                    Player.m_localPlayer.Message(type, user + ": " + text);
                 }
             }
             catch (Exception ex)

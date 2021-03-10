@@ -3,7 +3,7 @@ using System;
 
 namespace ValheimWebSocket.Classes
 {
-    public class HuginDispatcher
+    public class RavenDispatcher
     {
         static int keyID = 0;
 
@@ -13,14 +13,16 @@ namespace ValheimWebSocket.Classes
         {
             switch (args[0])
             {
-                case "message":
-                    Message(args[1], args[2]);
+                case "hugin":
+                    Message(args[1], args[2], false);
+                    break;
+                case "munin":
+                    Message(args[1], args[2], true);
                     break;
             }
         }
 
-        // ws:/hugin/message/<user>/<text>
-        public static void Message(string user, string text)
+        public static void Message(string user, string text, bool munin)
         {
             try
             {
@@ -29,9 +31,8 @@ namespace ValheimWebSocket.Classes
                 Raven.RavenText ravenText = new Raven.RavenText();
 
                 var key = "vwsp_" + keyID++;
-                var label = key;
+                var label = user;
                 var topic = user;
-                var munin = true;
 
                 logger.LogInfo($"AddTempText -> {key}");
 

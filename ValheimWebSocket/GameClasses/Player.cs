@@ -26,8 +26,8 @@ namespace ValheimWebSocket
             Tutorial.TutorialText modIntro = new Tutorial.TutorialText()
             {
                 m_name = "vwsp_intro",
-                m_label = "vwsp_intro",
-                m_topic = "Welcome to ValheimWebSocket",
+                m_label = "Welcome to Valheim WebSocket",
+                m_topic = "Welcome to Valheim WebSocket",
                 m_text = "Follow me on twitch.tv/skarab42",
             };
 

@@ -19,15 +19,14 @@ namespace ValheimWebSocket.Classes
                 logger.LogError("No arguments provided");
                 return;
             }
-            
-            switch (args[0]) {
-                case "hugin":
+
+            logger.LogInfo($"OnMessage {url}");
+
+            switch (args[0])
+            {
+                case "message":
                     logger.LogInfo($"Dispatch {url}");
-                    HuginDispatcher.Dispatch(args.SubArray(1, args.Length - 1));
-                    break;
-                case "player":
-                    logger.LogInfo($"Dispatch {url}");
-                    PlayerDispatcher.Dispatch(args.SubArray(1, args.Length - 1));
+                    MessageDispatcher.Dispatch(args.SubArray(1, args.Length - 1));
                     break;
             }
         }
