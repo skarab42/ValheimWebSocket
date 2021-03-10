@@ -2,6 +2,7 @@
 using BepInEx;
 using BepInEx.Configuration;
 using ValheimWebSocket.Classes;
+using System.IO;
 
 namespace ValheimWebSocket
 {
@@ -20,8 +21,10 @@ namespace ValheimWebSocket
         {
             UnityEngine.Debug.Log($"[VWS] {pluginName} v{pluginVersion}");
 
+            var bin = Path.Combine(Paths.PluginPath, "ValheimWebSocket/client.exe");
+
             serverPort = Config.Bind("Server", "Port", 60157, "WebSocket server port");
-            clientBin = Config.Bind("Client", "BinPath", "", "WebSocket server bin path");
+            clientBin = Config.Bind("Client", "BinPath", bin, "WebSocket server bin path");
             clientArgs = Config.Bind("Client", "BinArgs", "", "WebSocket server bin arguments");
 
             try
