@@ -1,6 +1,6 @@
 # Valheim WebSocket MOD
 
-WIP Projet développé en live sur la chaîne [twitch.tv/skarab42](https://www.twitch.tv/skarab42).
+WIP project developed [on Twitch](https://twitch.tv/skarab42). Follow [my channel](https://twitch.tv/skarab42) for more development live streams.
 
 # Features
 - Twitch users can spawn Hugin/Hudin with custom message
