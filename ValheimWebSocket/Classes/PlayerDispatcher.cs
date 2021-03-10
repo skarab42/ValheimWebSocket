@@ -5,7 +5,7 @@ namespace ValheimWebSocket.Classes
 {
     public class PlayerDispatcher
     {
-        private static ManualLogSource logger = BepInEx.Logging.Logger.CreateLogSource("Player");
+        private static ManualLogSource logger = BepInEx.Logging.Logger.CreateLogSource("PlayerDispatcher");
 
         public static void Dispatch(string[] args)
         {

@@ -7,7 +7,7 @@ namespace ValheimWebSocket.Classes
     {
         static int keyID = 0;
 
-        private static ManualLogSource logger = BepInEx.Logging.Logger.CreateLogSource("Hugin");
+        private static ManualLogSource logger = BepInEx.Logging.Logger.CreateLogSource("RavenDispatcher");
 
         public static void Dispatch(string[] args)
         {
